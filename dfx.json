@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "hellp_backend": {
+      "main": "src/hellp_backend/main.mo",
+      "type": "motoko"
+    },
+    "hellp_frontend": {
+      "dependencies": [
+        "hellp_backend"
+      ],
+      "source": [
+        "src/hellp_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
